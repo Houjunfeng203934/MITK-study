@@ -1,1 +1,19 @@
-这是main文件的
+MITK2021.2版本编译核心问题：
+工具：CMake，VS，OpenSSL，QT，源码。然后vs安装Git工具，QT vs tool工具。
+Cmake问题：
+QT路径问题：
+指定Qt的cmake目录即可，如F:/Qt/Qt5.12.9/5.12.9/msvc2017_64/lib/cmake/Qt5
+勾选 MITK_BUILD_EXAMPLES，设置CMAKE_INSTALL_PREFIX。
+VS问题：
+MS6006问题：CTK等源码拉取失败：git到MITK-build/ep/src
+ITK模块拉去代码失败：git代码到Build/ep/src/ITK/Modules/Remote/IsotropicWavelets
+还有一个问题会报错：
+F:\MITK\MITK-2021.02\CMakeExternals里的patch文件全部保存成CRLF格式。
+
+
+C2220问题：
+打开报警告的文件
+CTRL + A 全选，高级保存选项，选择编码和尾行格式。
+保存文件
+高级保存选项：https://blog.csdn.net/willingtolove/article/details/103772406
+
